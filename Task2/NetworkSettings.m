@@ -10,4 +10,20 @@
 
 @implementation NetworkSettings
 
+- (instancetype)initWithSettingsNative:(BOOL)isNative
+                           synchronous:(BOOL)isSynchronous {
+  self = [super init];
+
+  if (self) {
+    self.isNative = isNative;
+    self.isSynchronous = isSynchronous;
+  }
+
+  return self;
+}
+- (void)setSettingsNative:(BOOL)isNative synchronous:(BOOL)isSynchronous {
+  self.isNative = isNative;
+  self.isSynchronous = isSynchronous;
+}
+
 @end

@@ -17,22 +17,31 @@
 @implementation AddContactTableViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+  [super didReceiveMemoryWarning];
 }
 
 - (IBAction)saveButtonClicked:(id)sender {
-    
-    [[ContactAPI sharedManager] creteContactWithFullName:self.fullNameTextField.text email:self.emailTextField.text completionBlockWithSuccess:^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadDataFromServer" object:nil];
+  [[ContactAPI sharedManager]
+      creteContactWithFullName:self.fullNameTextField.text
+      email:self.emailTextField.text
+      completionBlockWithSuccess:^{
+        [[NSNotificationCenter defaultCenter]
+            postNotificationName:@"ReloadDataFromServer"
+                          object:nil];
         [self.navigationController popToRootViewControllerAnimated:YES];
-    } failure:^{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Error" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+      }
+      failure:^{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Try again later"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
         [alert show];
-    }];
+      }];
 }
 
 @end

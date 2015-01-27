@@ -10,4 +10,12 @@
 
 @interface NetworkSettings : NSObject
 
+@property(assign, nonatomic) BOOL isNative;
+@property(assign, nonatomic) BOOL isSynchronous;
+
+- (instancetype)initWithSettingsNative:(BOOL)isNative
+                           synchronous:(BOOL)isSynchronous;
+
+- (void)setSettingsNative:(BOOL)isNative synchronous:(BOOL)isSynchronous;
+
 @end

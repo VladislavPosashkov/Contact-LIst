@@ -8,19 +8,18 @@
 
 #import "Contact.h"
 
-
 @implementation Contact
 
 - (id)copyWithZone:(NSZone *)zone {
-    Contact *copy = [[Contact alloc] init];
-    copy.createdDate = self.createdDate;
-    copy.updatedDate = self.updatedDate;
-    copy.resourceURL = self.resourceURL;
-    copy.fullName = self.fullName;
-    copy.email = self.email;
-    copy.contactId = self.contactId;
-    
-    return copy;
+  Contact *copy = [[Contact alloc] init];
+  copy.createdDate = self.createdDate;
+  copy.updatedDate = self.updatedDate;
+  copy.resourceURL = self.resourceURL;
+  copy.fullName = self.fullName;
+  copy.email = self.email;
+  copy.contactId = self.contactId;
+
+  return copy;
 }
 
 @end

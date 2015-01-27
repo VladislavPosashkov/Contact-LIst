@@ -12,13 +12,13 @@
 
 @interface ContactDetailTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *fullNameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property(weak, nonatomic) IBOutlet UITextField *fullNameTextField;
+@property(weak, nonatomic) IBOutlet UITextField *emailTextField;
 
-@property (weak, nonatomic) IBOutlet UILabel *createdDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *updatedDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *resourceURLLabel;
+@property(weak, nonatomic) IBOutlet UILabel *createdDateLabel;
+@property(weak, nonatomic) IBOutlet UILabel *updatedDateLabel;
+@property(weak, nonatomic) IBOutlet UILabel *resourceURLLabel;
 
-@property (strong, nonatomic) Contact *contactDetail;
+@property(strong, nonatomic) Contact *contactDetail;
 
 @end

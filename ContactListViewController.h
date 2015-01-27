@@ -1,5 +1,5 @@
 //
-//  TestViewController.h
+//  ContactListViewController.h
 //  Task2
 //
 //  Created by Vladislav Posashkov on 26.01.15.
@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestViewController : UIViewController
+@interface ContactListViewController : UIViewController
+
+@property(weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property(weak, nonatomic)
+    IBOutlet UISegmentedControl *networkSettingSegmentedControl;
 
 @end

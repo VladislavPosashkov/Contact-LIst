@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface AddContactTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *fullNameTextField;
+@property(weak, nonatomic) IBOutlet UITextField *fullNameTextField;
 
-@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property(weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 @end

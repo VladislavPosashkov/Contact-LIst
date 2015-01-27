@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		300B1691E737EEB8A4EE2926 /* libPods-Task2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A63F6AB0D2DFBEC249DAC4B9 /* libPods-Task2.a */; };
 		864110971A6EB94200F4BCAB /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 864110961A6EB94200F4BCAB /* HTTPClient.m */; };
-		8641109A1A6EFBAA00F4BCAB /* ContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864110991A6EFBAA00F4BCAB /* ContactListTableViewController.m */; };
 		864110A11A6F186100F4BCAB /* AFNetworkingHTTPCLient.m in Sources */ = {isa = PBXBuildFile; fileRef = 864110A01A6F186100F4BCAB /* AFNetworkingHTTPCLient.m */; };
 		865DDEAE1A712AB1006A75BD /* JSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 865DDEAD1A712AB1006A75BD /* JSONUtilities.m */; };
 		865DDEB11A714AF9006A75BD /* ContactAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 865DDEB01A714AF9006A75BD /* ContactAPI.m */; };
+		869AF12D1A76C4BA00EE3066 /* NetworkSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 869AF12C1A76C4BA00EE3066 /* NetworkSettings.m */; };
+		869AF1301A76C5E400EE3066 /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869AF12F1A76C5E400EE3066 /* ContactListViewController.m */; };
 		86B083EB1A6D5720005957D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B083EA1A6D5720005957D8 /* main.m */; };
 		86B083EE1A6D5720005957D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B083ED1A6D5720005957D8 /* AppDelegate.m */; };
 		86B083F41A6D5720005957D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B083F21A6D5720005957D8 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		86D9C2F81A741FDE00A09B79 /* ContactDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9C2F71A741FDE00A09B79 /* ContactDetailTableViewController.m */; };
 		86D9C2FB1A745F8900A09B79 /* NativeSynchronousHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9C2FA1A745F8900A09B79 /* NativeSynchronousHTTPClient.m */; };
 		86D9C2FE1A745FC600A09B79 /* NativeAsynchronousHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9C2FD1A745FC600A09B79 /* NativeAsynchronousHTTPClient.m */; };
-		86EB73431A76A28700F3FB69 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EB73421A76A28700F3FB69 /* StorageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +41,16 @@
 		04B73F56E16A8F31473C5C53 /* Pods-Task2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Task2/Pods-Task2.debug.xcconfig"; sourceTree = "<group>"; };
 		864110951A6EB94200F4BCAB /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		864110961A6EB94200F4BCAB /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
-		864110981A6EFBAA00F4BCAB /* ContactListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListTableViewController.h; sourceTree = "<group>"; };
-		864110991A6EFBAA00F4BCAB /* ContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListTableViewController.m; sourceTree = "<group>"; };
 		8641109F1A6F186100F4BCAB /* AFNetworkingHTTPCLient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHTTPCLient.h; sourceTree = "<group>"; };
 		864110A01A6F186100F4BCAB /* AFNetworkingHTTPCLient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHTTPCLient.m; sourceTree = "<group>"; };
 		865DDEAC1A712AB1006A75BD /* JSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtilities.h; sourceTree = "<group>"; };
 		865DDEAD1A712AB1006A75BD /* JSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtilities.m; sourceTree = "<group>"; };
 		865DDEAF1A714AF9006A75BD /* ContactAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactAPI.h; path = ../ContactAPI.h; sourceTree = "<group>"; };
 		865DDEB01A714AF9006A75BD /* ContactAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactAPI.m; path = ../ContactAPI.m; sourceTree = "<group>"; };
+		869AF12B1A76C4BA00EE3066 /* NetworkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkSettings.h; sourceTree = "<group>"; };
+		869AF12C1A76C4BA00EE3066 /* NetworkSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSettings.m; sourceTree = "<group>"; };
+		869AF12E1A76C5E400EE3066 /* ContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListViewController.h; sourceTree = "<group>"; };
+		869AF12F1A76C5E400EE3066 /* ContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListViewController.m; sourceTree = "<group>"; };
 		86B083E51A6D5720005957D8 /* Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B083E91A6D5720005957D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86B083EA1A6D5720005957D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		86D9C2FA1A745F8900A09B79 /* NativeSynchronousHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeSynchronousHTTPClient.m; sourceTree = "<group>"; };
 		86D9C2FC1A745FC600A09B79 /* NativeAsynchronousHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAsynchronousHTTPClient.h; sourceTree = "<group>"; };
 		86D9C2FD1A745FC600A09B79 /* NativeAsynchronousHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAsynchronousHTTPClient.m; sourceTree = "<group>"; };
-		86EB73411A76A28700F3FB69 /* StorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
-		86EB73421A76A28700F3FB69 /* StorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
 		A63F6AB0D2DFBEC249DAC4B9 /* libPods-Task2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Task2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F1B6E156022A95F152D752 /* Pods-Task2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Task2/Pods-Task2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,8 +106,8 @@
 		8641109B1A6F055D00F4BCAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				864110981A6EFBAA00F4BCAB /* ContactListTableViewController.h */,
-				864110991A6EFBAA00F4BCAB /* ContactListTableViewController.m */,
+				869AF12E1A76C5E400EE3066 /* ContactListViewController.h */,
+				869AF12F1A76C5E400EE3066 /* ContactListViewController.m */,
 				86D9C2E01A739DA200A09B79 /* AddContactTableViewController.h */,
 				86D9C2E11A739DA200A09B79 /* AddContactTableViewController.m */,
 				86D9C2F61A741FDE00A09B79 /* ContactDetailTableViewController.h */,
@@ -197,6 +197,8 @@
 			children = (
 				86D587A11A72EC5500DB4496 /* Contact.h */,
 				86D587A21A72EC5500DB4496 /* Contact.m */,
+				869AF12B1A76C4BA00EE3066 /* NetworkSettings.h */,
+				869AF12C1A76C4BA00EE3066 /* NetworkSettings.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,8 +228,6 @@
 			children = (
 				865DDEAC1A712AB1006A75BD /* JSONUtilities.h */,
 				865DDEAD1A712AB1006A75BD /* JSONUtilities.m */,
-				86EB73411A76A28700F3FB69 /* StorageManager.h */,
-				86EB73421A76A28700F3FB69 /* StorageManager.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -388,13 +388,13 @@
 				865DDEAE1A712AB1006A75BD /* JSONUtilities.m in Sources */,
 				86D9C2E21A739DA200A09B79 /* AddContactTableViewController.m in Sources */,
 				864110A11A6F186100F4BCAB /* AFNetworkingHTTPCLient.m in Sources */,
+				869AF12D1A76C4BA00EE3066 /* NetworkSettings.m in Sources */,
 				86D587A31A72EC5500DB4496 /* Contact.m in Sources */,
-				86EB73431A76A28700F3FB69 /* StorageManager.m in Sources */,
 				864110971A6EB94200F4BCAB /* HTTPClient.m in Sources */,
 				86D9C2FE1A745FC600A09B79 /* NativeAsynchronousHTTPClient.m in Sources */,
 				86B083EE1A6D5720005957D8 /* AppDelegate.m in Sources */,
+				869AF1301A76C5E400EE3066 /* ContactListViewController.m in Sources */,
 				865DDEB11A714AF9006A75BD /* ContactAPI.m in Sources */,
-				8641109A1A6EFBAA00F4BCAB /* ContactListTableViewController.m in Sources */,
 				86D9C2FB1A745F8900A09B79 /* NativeSynchronousHTTPClient.m in Sources */,
 				86D9C2F81A741FDE00A09B79 /* ContactDetailTableViewController.m in Sources */,
 				86B083EB1A6D5720005957D8 /* main.m in Sources */,
@@ -456,7 +456,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -473,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -497,7 +497,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -508,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -521,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -532,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

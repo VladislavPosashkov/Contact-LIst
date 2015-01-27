@@ -9,21 +9,34 @@
 #import <Foundation/Foundation.h>
 
 @class Contact;
+@class NetworkSettings;
 
 @interface ContactAPI : NSObject
 
 + (ContactAPI *)sharedManager;
 
+- (void)setNetworkSetting:(NetworkSettings *)settings;
+
+- (NetworkSettings *)networkSetting;
+
 - (NSMutableArray *)contactList;
 
-- (void)loadContactListCompletionBlockWithSuccess:(void(^)()) success failure:(void(^)()) failure;
+- (void)loadContactListCompletionBlockWithSuccess:(void (^)())success
+                                          failure:(void (^)())failure;
 
-- (void)creteContactWithFullName:(NSString *)fullName email:(NSString *)email completionBlockWithSuccess:(void(^)())success failure:(void(^)())failure;
+- (void)creteContactWithFullName:(NSString *)fullName
+                           email:(NSString *)email
+      completionBlockWithSuccess:(void (^)())success
+                         failure:(void (^)())failure;
 
-- (void)updateContact:(Contact *)contact completionBlockWithSuccess:(void(^)())success failure:(void(^)())failure;
+- (void)updateContact:(Contact *)contact
+    completionBlockWithSuccess:(void (^)())success
+                       failure:(void (^)())failure;
 
-- (void)deleteContact:(Contact *)contact completionBlockWithSuccess:(void(^)())success failure:(void(^)())failure;
+- (void)deleteContact:(Contact *)contact
+    completionBlockWithSuccess:(void (^)())success
+                       failure:(void (^)())failure;
 
-- (void) setContactList:(NSMutableArray *)contactList sender:(id)sender;
+- (void)setContactList:(NSMutableArray *)contactList sender:(id)sender;
 
 @end
