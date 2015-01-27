@@ -1,5 +1,5 @@
 //
-//  StorageManager.h
+//  NetworkSettings.h
 //  Task2
 //
 //  Created by Vladislav Posashkov on 26.01.15.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface StorageManager : NSObject
+@interface NetworkSettings : NSObject
 
 @end
